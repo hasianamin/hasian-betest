@@ -20,21 +20,23 @@ this folder contains of redis that would perform cached data from ms-hasian-bete
 4. go to directory redis-hasian-betest and perform npm i && npm start
 
 ## Usage
-POST http://172.104.50.86:3000/auth - to generate token
-POST http://172.104.50.86:3000/users 
-Body:
-userName - string 
-accountNumber - string, unique
-emailAddress - string
-identityNumber - string, unique
-GET http://172.104.50.86:3000/users/identity-number - to find by identity-number
-GET http://172.104.50.86:3000//users/account-number - to find by account-number
-GET http://172.104.50.86:3000//users/id - to find by id
-PUT http://172.104.50.86:3000//users/id
-userName - string 
-accountNumber - string, unique
-emailAddress - string
-identityNumber - string, unique
-DELETE http://172.104.50.86:3000/users/id -  to delete user by id
+### POST http://172.104.50.86:3000/auth - to generate token
+put this token on headers to authorize the request
+### POST http://172.104.50.86:3000/users 
+  Body:
+    userName - string 
+    accountNumber - string, unique
+    emailAddress - string
+    identityNumber - string, unique
+### GET http://172.104.50.86:3000/users/identity-number - to find by identity-number
+### GET http://172.104.50.86:3000//users/account-number - to find by account-number
+### GET http://172.104.50.86:3000//users/id - to find by id
+### PUT http://172.104.50.86:3000//users/id
+  Body:
+    userName - string 
+    accountNumber - string, unique
+    emailAddress - string
+    identityNumber - string, unique
+### DELETE http://172.104.50.86:3000/users/id -  to delete user by id
 
 
